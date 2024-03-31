@@ -572,6 +572,12 @@ video {
   }
 }
 
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+
 @media (min-width: 1536px) {
   .container {
     max-width: 1536px;
@@ -721,8 +727,17 @@ video {
   margin: 1.5rem;
 }
 
+.mx-6 {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
 .mb-3 {
   margin-bottom: 0.75rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
 }
 
 .ml-4 {
@@ -733,20 +748,16 @@ video {
   margin-left: 1.5rem;
 }
 
+.mr-6 {
+  margin-right: 1.5rem;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
 }
 
 .mt-4 {
   margin-top: 1rem;
-}
-
-.mr-6 {
-  margin-right: 1.5rem;
-}
-
-.mb-6 {
-  margin-bottom: 1.5rem;
 }
 
 .box-border {
@@ -860,6 +871,10 @@ video {
   height: 0.5rem;
 }
 
+.h-8 {
+  height: 2rem;
+}
+
 .h-\[200px\] {
   height: 200px;
 }
@@ -876,16 +891,12 @@ video {
   height: 100vh;
 }
 
-.h-8 {
-  height: 2rem;
-}
-
-.h-\[21px\] {
-  height: 21px;
-}
-
 .w-1 {
   width: 0.25rem;
+}
+
+.w-8 {
+  width: 2rem;
 }
 
 .w-\[279px\] {
@@ -914,14 +925,6 @@ video {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-8 {
-  width: 2rem;
-}
-
-.w-\[85px\] {
-  width: 85px;
 }
 
 .flex-shrink {
@@ -1440,10 +1443,6 @@ video {
 
 .justify-items-stretch {
   justify-items: stretch;
-}
-
-.gap-y-3 {
-  row-gap: 0.75rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -2561,11 +2560,21 @@ video {
     }
   }
 
+  @media (min-width: 1440px) {
+    .sm\:container {
+      max-width: 1440px;
+    }
+  }
+
   @media (min-width: 1536px) {
     .sm\:container {
       max-width: 1536px;
     }
   }
+}
+
+.default\:h-\[29px\]:default {
+  height: 29px;
 }
 
 .hover\:font-bold:hover {
@@ -2593,6 +2602,56 @@ video {
 @media (min-width: 640px) {
   .sm\:underline {
     text-decoration-line: underline;
+  }
+}
+
+@media (min-width: 1440px) {
+  .desktop\:h-\[522px\] {
+    height: 522px;
+  }
+
+  .desktop\:h-\[200px\] {
+    height: 200px;
+  }
+
+  .desktop\:h-\[29px\] {
+    height: 29px;
+  }
+
+  .desktop\:w-96 {
+    width: 24rem;
+  }
+
+  .desktop\:w-\[336px\] {
+    width: 336px;
+  }
+
+  .desktop\:w-\[82px\] {
+    width: 82px;
+  }
+
+  .desktop\:px-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .desktop\:py-1 {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+
+  .desktop\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .desktop\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .desktop\:font-medium {
+    font-weight: 500;
   }
 }
 
