@@ -18,8 +18,40 @@
     />
   </head>
   <body>
-    <main class="bg-yellow flex h-screen w-screen items-center justify-center">
-      <div class="h-[501px] w-[327px] rounded-[20px] bg-white"></div>
+    <main
+      class="bg-yellow relative flex h-screen w-screen items-center justify-center"
+    >
+      <div
+        class="absolute ml-4 mt-4 h-[501px] w-[327px] rounded-[20px] bg-black"
+      ></div>
+      <div
+        class="z-10 h-[501px] w-[327px] rounded-[20px] border-[1px] border-solid border-black bg-white"
+      >
+        <div>
+          <img
+            class="m-6 h-[200px] w-[279px] rounded-[20px] object-cover"
+            src="images/illustration-article.svg"
+            alt="blog-img"
+          />
+        </div>
+        <div class="mb-6 ml-6 mr-6">
+          <div
+            class="bg-yellow mb-3 flex h-[26px] w-[73px] items-center justify-center rounded text-xs font-extrabold"
+          >
+            Learning
+          </div>
+          <p class="mb-3 text-xs">Published 21 Dec 2023</p>
+          <h1 class="mb-3 text-xl font-extrabold">HTML & CSS foundations</h1>
+          <p class="text-gray text-sm font-medium">
+            These languages are the backbone of every website, defining
+            structure, content, and presentation.
+          </p>
+        </div>
+        <div class="m-6 flex items-center">
+          <img class="h-8 w-8" src="images/image-avatar.webp" alt="author" />
+          <span class="px-3 text-sm font-extrabold">Greg Hooper</span>
+        </div>
+      </div>
     </main>
   </body>
 </html>
